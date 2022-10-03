@@ -10,11 +10,13 @@ var twoSum = function(nums, target) {
     for (let i = 0; i < nums.length; i++){
         let another = target - nums[i]
 
-        if (another in map){
+        if (map[another] != null){
             return [map[another], i]
         }
 
         map[nums[i]] = i
     }
-    
+    console.log(map)
 };
+
+console.log(twoSum([12,97,2,7],9))
