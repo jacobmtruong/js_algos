@@ -27,3 +27,5 @@ function minSubArrayLen(arr, sum){
 
     return minLen === Infinity ? 0 : minLen;
 }
+
+console.log(minSubArrayLen([1, 2, 3, 4, 5, 6, 7], 6))
